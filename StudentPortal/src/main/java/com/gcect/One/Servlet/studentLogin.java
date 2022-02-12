@@ -58,21 +58,7 @@ public class studentLogin extends HttpServlet {
 		}
 		
 		
-		/**lb.setUsername(request.getParameter("uname"));
-		lb.setPassword(request.getParameter("password"));
-		String status=dao.validate(lb);
-		PrintWriter pw=response.getWriter();
-		pw.write(status);*
 		
-		*
-		*		pw.write("Username:");
-		pw.write(lb.getUsername());
-		pw.write("<br>");
-		pw.write("Password:");
-		pw.write(lb.getPassword());
-	
-		*
-		*/
 	}
 
 
