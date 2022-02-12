@@ -1,0 +1,163 @@
+@charset "ISO-8859-1";
+
+body{
+	display: flex;
+	flex-direction: row;
+}
+.mainDiv{
+	display: flex;
+	justify-content: flex-start;
+	margin-left: 100px;
+	margin-top: 50px;
+	width: 60%;
+}
+.question{
+	width: 40%;
+	padding: 40px;
+	margin: 40px;
+	background-color: white;
+	
+}
+.question p{
+	color:#1c2841;
+	font-size: 16px;
+	word-spacing: 7px;
+	font-weight: bold;
+
+}
+:root {
+	--gradient-shadow: linear-gradient(
+		45deg,
+		#00008b,
+		#b0c4de,
+	    #fafad2,
+		#ffddf4,
+		  #008b8b,
+		#ffffe0,
+		#e7feff,
+		#6495ed
+	);
+	
+	background-color: #f2f3f4;
+	margin: 0px;
+	padding: 0px;
+}
+form {
+	margin: 0;
+	padding: 0;
+	height:50vh;
+	margin-top: 60px;
+	padding: 0px;
+	
+}
+
+/*custom animation*/
+.shadow {
+    border-radius: 12px;
+	position: relative;
+	width: 30vw;
+	height: 50vh;
+	background: linear-gradient(0deg, #f0f8ff, #bcd4e6);
+}
+.shadow:before,
+.shadow:after {
+	border-radius: 12px;
+	content: "";
+	position: absolute;
+	top: -2px;
+	left: -2px;
+	background: var(--gradient-shadow);
+	background-size: 400%;
+	width: calc(100% + 4px);
+	height: calc(100% + 4px);
+	z-index: -1;
+	animation: animate 20s linear infinite;
+}
+
+.shadow:after {
+	filter: blur(20px);
+}
+
+@keyframes animate {
+	0% {
+		background-position: 0 0;
+	}
+	50% {
+		background-position: 300% 0;
+	}
+	100% {
+		background-position: 0 0;
+	}
+}
+
+
+/*custom animation ends*/
+
+h3{
+	
+    font-size: 16px;
+    text-transform: uppercase;
+    color: #36454f;
+}
+
+
+td{
+	
+	padding: 20px 10px 5px 40px;
+	box-sizing: border-box;
+}
+#name{
+	margin: 0px 0px 0px 10px;
+	width: 210px;
+	height: 40px;
+}
+
+#pass{
+	margin: 0px 0px 0px 10px;
+	width: 210px;
+	height: 40px;
+}
+#submit{
+	
+	width: 50%;
+	height: 30px;
+	color: #fff;
+	border: none;
+	background-color: #353839;
+    margin-left: 15px;
+	margin-top: 10px;
+	box-sizing: border-box;
+	text-transform: uppercase;
+	
+}
+.btn{
+	text-transform: uppercase;
+	width: 60%;
+	height: 30px;
+	color: #fff;
+	border: none;
+	background-color: #353839;
+	margin-left: 40px;
+	margin-top: 10px;
+	box-sizing: border-box;
+	
+}
+.btn a{
+	text-decoration: none;
+	color: #fff;
+}
+input{
+	border: none;
+}
+.clear{
+	margin-left: 0px;
+	margin-top: 10px;
+	text-transform: uppercase;
+	width: 100%;
+	height: 30px;
+	color: #fff;
+	border: none;
+	background-color: #353839;
+	
+	box-sizing: border-box;
+}

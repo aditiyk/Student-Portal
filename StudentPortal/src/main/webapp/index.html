@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Student Portal</title>
+<link rel="stylesheet" type="text/css" href="index.css"> 
+</head>
+<body>
+<div class="mainDiv">
+<form action="studentLogin" method="get" class="shadow" onsubmit="return formVal()">
+
+<table>
+<tbody>
+<tr><td><h3>User name</h3></td><td><input type="email" id="name" name="uname"></td></tr>
+<tr><td><div id="msg" style="color:red;"></div></td></tr>
+
+<tr><td><h3>Password</h3></td>
+<td><input type="password" id="pass" name="password"></td></tr>
+
+<tr>
+<tr><td><div id="msg" style="color:red;"></div></td></tr>
+
+<td><button type="reset" value="Reset" class="clear">Clear</button></td>
+<td><input type="submit" name="submit" value="login" id="submit" ></td>
+</tr>
+</tbody>
+</table>
+<button class="btn"><a href="StudentRegistration.jsp">New User</a></button>
+</form>
+</div>
+<div class="question">
+<p>
+Design a web application for &lsquo;Student Portal&rsquo; with the facility to &lsquo;Login to
+the application” and &lsquo;Register a new user&rsquo; with the following design
+specification using HTML, JavaScript, JSP, Servlet and JDBC.<br> Maintain the
+recommended coding style and directory structure.
+<br>
+➢ Create a &lsquo;index.html&rsquo; contains &lsquo;Login to the application&rsquo; and &lsquo;Register
+a new user&rsquo; facility with appropriate forms and inputs. The html page
+must contain following form elements, - [1]
+<br>
+o Username field
+<br>
+o Password field
+<br>
+o Login button
+<br>
+o Clear button
+<br>
+o New user button
+<br>
+</p>
+<p>
+➢ When the user enters valid username and password, upon clicking
+&lsquo;Login&rsquo; button the user should be taken to the home page where he will
+be displayed his credentials fetched from the database.
+<br>
+This code should be listed in &lsquo;Welcome.jsp&rsquo; where the page will
+establish a connection with the database and fetch the data into the
+bean.
+<br>
+➢ If the user enters invalid credentials for username and password, he
+will be redirected to a jsp error page. 
+<br>
+➢ The user will be taken to a new user registration form upon clicking on
+&lsquo;New user&rsquo; button. The &lsquo;StudentRegistration.jsp&rsquo; should have the
+following data fields to collect the information from the user.
+</p>
+
+</div>
+</body>
+</html>

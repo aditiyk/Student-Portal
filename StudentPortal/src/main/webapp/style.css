@@ -1,0 +1,136 @@
+@charset "ISO-8859-1";
+
+/*Student Registration page CSS*/
+
+.mainDiv{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	
+}
+
+:root {
+	--gradient-shadow: linear-gradient(
+		45deg,
+		#00008b,
+		#b0c4de,
+	    #fafad2,
+		#ffddf4,
+		  #008b8b,
+		#ffffe0,
+		#e7feff,
+		#6495ed
+	);
+	
+
+	margin: 0px;
+	padding: 0px;
+}
+form {
+	margin: 0;
+	padding: 0;
+	height: 95vh;
+	margin-top: 60px;
+	padding: 0px;
+}
+
+/*custom animation*/
+.shadow {
+    border-radius: 12px;
+	position: relative;
+	width: 50vw;
+	height: 95vh;
+	background: linear-gradient(0deg, #f0f8ff, #bcd4e6);
+}
+.shadow:before,
+.shadow:after {
+	border-radius: 12px;
+	content: "";
+	position: absolute;
+	top: -2px;
+	left: -2px;
+	background: var(--gradient-shadow);
+	background-size: 400%;
+	width: calc(100% + 4px);
+	height: calc(100% + 4px);
+	z-index: -1;
+	animation: animate 20s linear infinite;
+}
+
+.shadow:after {
+	filter: blur(20px);
+}
+
+@keyframes animate {
+	0% {
+		background-position: 0 0;
+	}
+	50% {
+		background-position: 300% 0;
+	}
+	100% {
+		background-position: 0 0;
+	}
+}
+
+
+/*custom animation ends*/
+.table{
+	margin: 0px;
+	padding: 20px 0px 20px 0px;
+	display: flex;
+	justify-content: center;
+}
+
+h1{
+	color: #696969;
+	font-size: 20px;
+	text-transform: uppercase;
+letter-spacing: 4px;
+word-spacing: 6px;
+}
+input{
+	width:  110%;
+	color:  #191970;
+	height:  30px;
+	padding:  5px;
+	border: 1px solid #e5e4e2;
+	margin-top: 17px;
+	font-size: 16px;
+	
+}
+td{
+	text-transform: uppercase;
+	color: #696969;
+}
+#btn{
+	width: 150%;
+	height: 50px;
+	text-transform: uppercase;
+	font-weight: bold;
+}
+#btn:hover{
+	background-color: rgba(128,128,128,1);
+	color: #fff;
+	box-shadow: 0px 0px 3px #000;
+}
+input:focus{
+	background-color: rgba(244,240,236,0.1);
+	box-shadow: 0px 0px 3px #a9a9a9;
+	outline: none;
+}
+select{
+	padding: 10px;
+	border:  1px solid #bebebe;
+	padding:  7px;
+	margin-top:  20px;
+	background-color: #e5e4e2;
+	color:  black;
+	box-sizing: border-box;
+}
+select:focus{
+   background-color: rgba(105,105,105,1);
+   outline:  none;
+   border:  1px solid #696969;
+   color:  whitesmoke;
+}
