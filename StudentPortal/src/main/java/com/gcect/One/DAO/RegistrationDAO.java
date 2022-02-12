@@ -58,33 +58,3 @@ public class RegistrationDAO {
 
 
 
-/**
- * 	
-/*	private String Roll=null;
-	public String generateRoll(){
-		
-		return roll;
-	}
-	
- * 
- * 
- * 
- *  public static String registerStudent(RegistrationBean rbean) throws ClassNotFoundException {
-		    String status="Invalid Credentials!!!";
-	        String INSERT_USERS_SQL = "INSERT INTO STUDENT_TBL" +
-	            "  (FirstName, LastName, ROLL , DEPT, GND, DOB, MOB, EMAIL) VALUES " +
-	            " (?, ?, ?, ?, ?,?,?,?);";
- * 
- * 
- * PreparedStatement preparedStatement = conn.prepareStatement(INSERT_USERS_SQL)) {
-	            preparedStatement.setString(1, rbean.getFname());
-	            preparedStatement.setString(2, rbean.getLname());
-	            preparedStatement.setString(3, rbean.getRoll());
-	            preparedStatement.setString(4, rbean.getDept());
-	            preparedStatement.setString(5, rbean.getGnd());
-	            preparedStatement.setString(6, rbean.getDob());
-	            preparedStatement.setString(7, rbean.getMob());
-	            preparedStatement.setString(8, rbean.getEmail());
-
-	            ResultSet rs=preparedStatement.executeQuery();
- * */
